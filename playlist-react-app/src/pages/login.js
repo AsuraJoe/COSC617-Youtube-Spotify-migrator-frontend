@@ -7,7 +7,7 @@ function App(props) {
 	async function loginUser(event) {
 		event.preventDefault()
 
-		const response = await fetch('http://localhost:1337/api/login', {
+		const response = await fetch('http://localhost:4657/users/authenticate', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
